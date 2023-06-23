@@ -5,14 +5,16 @@ display: block;}
 body {
    display: flex;
    flex-direction: column;
-   font-family: 'Roboto Slab', serif;
+   font-family: source-han-serif-japanese, serif;
+   font-style: normal;
    text-align: center;
-   background-color: rgb(254, 244, 255);
-   color: rgb(27, 0, 39)
+   color: rgb(8,4,76);
+   background-color: white
 }
 
 .title {
     font-size: 46pt;
+    font-weight: 900;
 }
 
 .page {
