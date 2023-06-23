@@ -35,32 +35,46 @@
             <form action="mailto:vivrelia@gmail.com" method="post">
                 <fieldset>
                     <legend>Hello!</legend>
-                    <label for="name">Full Name: <input type="text" name="name" /></label>
+                    <label>Full Name: <input type="text" name="name" required="required" /></label>
                     <br />
-                    <label for="email">Email: <input type="text" name="email" /></label>
-                    <p>Your Message:</p>
-                        <textarea name="message" cols="20" rows="4">Hey...</textarea>
+                    <label>Email: <input type="email" name="email" required="required" /></label>
+                    <br />
+                    <label>Phone: <input type='number' name='phone' required='required' /></label>
+                    <br /><br />
+                    <label for="message">Your Message:</label>
+                    <br />
+                    <textarea name="message" cols="20" rows="4" placeholder="Hey..."></textarea>
                     <p>I'm interested in:
                         <br />
-                        <input type="checkbox" name="interest" value="facials" /> Facials
-                        <input type="checkbox" name="interest" value="massage" /> Massage
-                        <input type="checkbox" name="interest" value="face yoga" /> Face Yoga Lessons
+                        <input type="checkbox" name="interest" value="facials" /> 
+                        <label for='facials'>Facials</label>
+                        <input type="checkbox" name="interest" value="massage" /> 
+                        <label for="massage">Massage</label>
+                        <input type="checkbox" name="interest" value="face yoga" /> 
+                        <label for="face yoga lessons">Face Yoga Lessons</label>
                     </p>
                     <input type="submit" value="Send" />
                 </fieldset>
             </form>
         </section>
         <section class="locations and availability">
-        <h2>Locations and Avalability</h2>  
-            <address>
-                <p>Apogii Clinic - Notting Hill<br>105 Westbourne Grove<br>London<br>W2 4UW</p>
-            </address>
-            <p>Availability:</p> 
+        <h2>Locations and Avalability</h2> 
+            <div id="apogii">
+                <address>
+                    <p>Apogii Clinic - Notting Hill<br>105 Westbourne Grove<br>London<br>W2 4UW</p>
+                </address>
+                <p>Availability:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8987021295347!2d-0.19349939999999832!3d51.5150744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487611892cb45d63%3A0xe5d5e479e489ae26!2sApogii%20Cryo%20%26%20Wellness%20Clinic!5e0!3m2!1sen!2suk!4v1687546592984!5m2!1sen!2suk" 
+                width="250" height="200" style="border: 0;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
             <div id="urbanretreat">
                 <address>
                     <p><a href='https://urbanretreat.co.uk/our-experts/yumiko-inoue/'>Urban Retreat - Knightsbridge</a><br>2-4 Hans Crescent<br>London<br>SW1X 0LH</p>
                 </address>
                 <p>Availability: Tuesdays and Fridays</p>
+            </div>
         </section>
         <section class="social media">
                 <h2>Social Media</h2>
